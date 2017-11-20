@@ -27,10 +27,11 @@ https://www.virtualbox.org/wiki/Downloads
 https://www.vagrantup.com/downloads.html
 
 ### Install Ansible
+```
 pip install -U setuptools
 pip install distribute
 pip install ansible
-
+```
 ### Install Maven
 https://howtoprogram.xyz/2016/09/08/install-maven-ubuntu-16-04-lts-xenial-xerus/
 ```

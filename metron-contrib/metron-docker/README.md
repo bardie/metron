@@ -38,10 +38,10 @@ https://howtoprogram.xyz/2016/09/08/install-maven-ubuntu-16-04-lts-xenial-xerus/
 sudo tar -xf apache-maven-3.3.9-bin.tar.gz  -C /usr/local
 cd /usr/local
 sudo ln -s apache-maven-3.3.9 maven
-sudo vi /etc/profile.d/maven.sh
+sudo vi /etc/profile.d/maven.sh                       # Paste the export data below
 ```
-export M2_HOME=/usr/local/maven
-export PATH=${M2_HOME}/bin:${PATH}
+* export M2_HOME=/usr/local/maven
+* export PATH=${M2_HOME}/bin:${PATH}
 ```
 source /etc/profile
 ```

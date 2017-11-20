@@ -20,6 +20,41 @@ Metron Docker includes these images that have been customized for Metron:
 Setup
 -----
 
+### Install Virtualbox
+https://www.virtualbox.org/wiki/Downloads
+
+### Install Vagrant
+https://www.vagrantup.com/downloads.html
+
+### Install Ansible
+pip install -U setuptools
+pip install distribute
+pip install ansible
+
+### Install Maven
+https://howtoprogram.xyz/2016/09/08/install-maven-ubuntu-16-04-lts-xenial-xerus/
+```
+sudo tar -xf apache-maven-3.3.9-bin.tar.gz  -C /usr/local
+cd /usr/local
+sudo ln -s apache-maven-3.3.9 maven
+sudo vi /etc/profile.d/maven.sh
+```
+export M2_HOME=/usr/local/maven
+export PATH=${M2_HOME}/bin:${PATH}
+```
+source /etc/profile
+```
+
+### Install Docker-machine
+```
+curl -L https://github.com/docker/machine/releases/download/v0.13.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine &&
+chmod +x /tmp/docker-machine &&
+sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+```
+
+### Install Docker-compose
+pip install docker-compose
+
 Install [Docker for Mac](https://docs.docker.com/docker-for-mac/) or [Docker for Windows](https://docs.docker.com/docker-for-windows/).  The following versions have been tested:
 
   - Docker version 1.12.0
